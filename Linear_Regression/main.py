@@ -10,9 +10,9 @@ def main():
 
     # Generate synthetic data
     np.random.seed(42)
-    X = 2 * np.random.rand(100, 3)  # 100 samples, 3 features
-    true_weights = [0.5, -0.2, 1.5]
-    y = np.dot(X, true_weights) + 0.1 * np.random.randn(100)  # Add noise
+    X = 2 * np.random.rand(100, 1)  # 100 samples, 1 features
+    true_weights = [0.28]
+    y = np.dot(X, true_weights) + 0.05 * np.random.randn(100)  + 0.1 * np.random.randn(100) # Add noise
     
     # Split data into train and validation sets
     X_train, X_val, y_train, y_val = custom_train_test_split(
@@ -21,8 +21,8 @@ def main():
     
     # Create and train the model
     model = LinearRegression(
-        learning_rate=0.01,
-        epochs=10000,
+        learning_rate=0.1,
+        epochs=1000,
         batch_size=32
     )
     
@@ -50,6 +50,18 @@ def main():
     plt.grid(True)
     plt.show()
     
+    # Plot the regression line with data points
+    plt.figure(figsize=(10, 6))
+    plt.scatter(X, y, label="Data Points", color="blue")  # Scatter plot of original data
+    x_range = np.linspace(X.min(), X.max(), 100)  # Generate points for the regression line
+    y_line = model.weights[0] * x_range + model.bias  # Calculate predicted y values
+    plt.plot(x_range, y_line, color="red", label="Learned Regression Line")  # Plot regression line
+    plt.xlabel('Feature (X)')
+    plt.ylabel('Target (y)')
+    plt.title('Linear Regression Line with Data Points')
+    plt.grid(True)
+    plt.legend()
+    plt.show()
 
 if __name__ == '__main__':
     main()
