@@ -49,3 +49,8 @@ def custom_train_test_split(X, y, test_size=0.2, random_state=None):
     y_test = y[test_indices]
     
     return X_train, X_test, y_train, y_test
+
+# 9819225564 ->  "Rubhji"
+# 8237745923 -> ""
+
+# 97026166305
