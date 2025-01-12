@@ -1,9 +1,10 @@
 # Environment
 /.venv/
 
-Linear_Regression/src/__pycache__/
-Logistic_Regression/src/__pycache__/
+01_Linear_Regression/src/__pycache__/
 
-Logistic_Regression/src/preprocess.py
-Logistic_Regression/data/
+02_Logistic_Regression/src/__pycache__/
+02_Logistic_Regression/src/preprocess.py
+02_Logistic_Regression/data/
 
+03_Decision_Tree/src/__pycache__/
