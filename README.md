@@ -8,6 +8,7 @@ Each implementation is designed to be simple, clean, and easy to understand, mak
 1. **Linear Regression**  
 2. **Logistic Regression**  
 3. **Decision Tree**
+4. **Random Forest**
 
 ## **Installation and Setup**
 ### **Step 1: Install Required Libraries**
@@ -35,11 +36,6 @@ After navigating to the model directory, execute the `train.py` file to train th
 python train.py
 ```
 
-**Example:**  
-```bash
-python train.py
-```
-
 ### **Directory Structure**
 ```
 ML_Models_From_Scratch/
@@ -62,6 +58,13 @@ ML_Models_From_Scratch/
 │   ├── src/
 |        ├── Node.py
 |        ├── DecisionTree.py
+|
+├── 04_Random_Forest/
+│   ├── train.py
+│   ├── src/
+|        ├── Node.py
+|        ├── DecisionTree.py
+|        ├── RandomForest.py
 │
 ├── .gitignore
 ├── requirements.txt
