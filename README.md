@@ -9,6 +9,7 @@ Each implementation is designed to be simple, clean, and easy to understand, mak
 2. **Logistic Regression**  
 3. **Decision Tree**
 4. **Random Forest**
+5. **K Nearest Neighbors**
 
 ## **Installation and Setup**
 ### **Step 1: Install Required Libraries**
@@ -65,6 +66,11 @@ ML_Models_From_Scratch/
 |        ├── Node.py
 |        ├── DecisionTree.py
 |        ├── RandomForest.py
+|
+├── 05_KNN/
+│   ├── train.py
+│   ├── src/
+|        ├── KNN.py
 │
 ├── .gitignore
 ├── requirements.txt
