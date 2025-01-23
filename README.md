@@ -10,6 +10,7 @@ Each implementation is designed to be simple, clean, and easy to understand, mak
 3. **Decision Tree**
 4. **Random Forest**
 5. **K Nearest Neighbors**
+6. **Support Vector Machine**
 
 ## **Installation and Setup**
 ### **Step 1: Install Required Libraries**
@@ -71,6 +72,11 @@ ML_Models_From_Scratch/
 │   ├── train.py
 │   ├── src/
 |        ├── KNN.py
+|
+├── 06_SVM/
+│   ├── train.py
+│   ├── src/
+|        ├── SVM.py
 │
 ├── .gitignore
 ├── requirements.txt
