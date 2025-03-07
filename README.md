@@ -12,6 +12,7 @@ Each implementation is designed to be simple, clean, and easy to understand, mak
 5. **K Nearest Neighbors**
 6. **Support Vector Machine**
 7. **KMeans Clustering**
+8. **Transformer ( Encoder-Decoder )**
 
 ## **Installation and Setup**
 ### **Step 1: Install Required Libraries**
@@ -45,45 +46,61 @@ ML_Models_From_Scratch/
 │
 ├── 01_Linear_Regression/
 │   ├── train.py
-|   ├── results/
+│   ├── results/
 │   ├── src/
-|        ├── linear_regression.py
+│   │   ├── linear_regression.py
 │
 ├── 02_Logistic_Regression/
 │   ├── train.py
-|   ├── data/
+│   ├── data/
 │   ├── src/
-|        ├── logistic_regression.py
-|        ├── metrics.py
+│   │   ├── logistic_regression.py
+│   │   ├── metrics.py
 │
 ├── 03_Decision_Tree/
 │   ├── train.py
 │   ├── src/
-|        ├── Node.py
-|        ├── DecisionTree.py
-|
+│   │   ├── Node.py
+│   │   ├── DecisionTree.py
+│
 ├── 04_Random_Forest/
 │   ├── train.py
 │   ├── src/
-|        ├── Node.py
-|        ├── DecisionTree.py
-|        ├── RandomForest.py
-|
+│   │   ├── Node.py
+│   │   ├── DecisionTree.py
+│   │   ├── RandomForest.py
+│
 ├── 05_KNN/
 │   ├── train.py
 │   ├── src/
-|        ├── KNN.py
-|
+│   │   ├── KNN.py
+│
 ├── 06_SVM/
 │   ├── train.py
 │   ├── src/
-|        ├── SVM.py
-|
+│   │   ├── SVM.py
+│
 ├── 07_KMeans_Clustering/
 │   ├── train.py
 │   ├── src/
-|        ├── KMeans.py
+│   │   ├── KMeans.py
 │
+├── 08_Transformer/
+│   ├── src/
+│   │   ├── decoder/
+│   │   │   ├── decoder_block.py
+│   │   │   ├── decoder.py
+│   │   ├── encoder/
+│   │   │   ├── encoder.py
+│   │   │   ├── feed_forward_layer.py
+│   │   │   ├── layer_normalization.py
+│   │   │   ├── multi_headed_attention_block.py
+│   │   ├── build_transformer_.py
+│   │   ├── input_embedding.py
+│   │   ├── positional_encoding.py
+│   │   ├── projection_layer.py
+│   │   ├── transformer.py
+│ 
 ├── .gitignore
 ├── requirements.txt
 └── README.md
