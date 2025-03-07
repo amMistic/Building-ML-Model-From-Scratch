@@ -94,9 +94,12 @@ ML_Models_From_Scratch/
 │   │   │   ├── encoder.py
 │   │   │   ├── feed_forward_layer.py
 │   │   │   ├── layer_normalization.py
-│   │   │   ├── multi_headed_attention_bl.py
-│   │   ├── build_transformer.py
+│   │   │   ├── multi_headed_attention_block.py
+│   │   ├── build_transformer_.py
 │   │   ├── input_embedding.py
+│   │   ├── positional_encoding.py
+│   │   ├── projection_layer.py
+│   │   ├── transformer.py
 │ 
 ├── .gitignore
 ├── requirements.txt
